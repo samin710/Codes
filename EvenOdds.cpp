@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int input[3], x;
+    int input[3], x, ct = 0;
 
     for (int i = 0; i < 2; i++)
     {
@@ -10,10 +10,24 @@ int main()
         input[i] = x;
     }
     int n = input[0];
-    int k = input[1];
-    for (int i = 0; i < 2; i++)
+    int k = input[1] - 1;
+    int final[n];
+
+    for (int i = 1; i <= n; i++)
     {
-        cout << input[i] << endl;
+        if (i % 2 != 0)
+        {
+            final[ct] = i;
+            ct++;
+        }
     }
-    cout<<"samin";
+    for (int i = 1; i <= n; i++)
+    {
+        if (i % 2 == 0)
+        {
+            final[ct] = i;
+            ct++;
+        }
+    }
+    cout << final[k];
 }
