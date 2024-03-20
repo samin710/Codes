@@ -10,7 +10,7 @@ int main()
         input[i] = x;
     }
     int n = input[0];
-    int k = input[1] - 1;
+    int s = input[1] - 1;
     int final[n];
 
     for (int i = 1; i <= n; i++)
@@ -29,5 +29,5 @@ int main()
             ct++;
         }
     }
-    cout << final[k];
+    cout << final[s];
 }
