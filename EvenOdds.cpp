@@ -15,4 +15,5 @@ int main()
     {
         cout << input[i] << endl;
     }
+    cout<<"samin";
 }
